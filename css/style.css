@@ -1,0 +1,46 @@
+body {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: large;
+  background-color: #424242;
+  color: #CCCCCC;
+}
+
+p.credit {
+  font-size: small;
+  font-weight: normal;
+  position: fixed;
+  bottom: 0;
+}
+
+p.credit a {
+  color: #BBB3FF;
+}
+
+p.anim:first-child {
+  padding-top: 5em;
+}
+
+p.anim:last-of-type {
+  padding-bottom: 5em;
+}
+
+p.anim {
+  animation-duration: 3s;
+  animation-name: slidein;
+  text-align: center;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 3em;
+  }
+
+  to {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
